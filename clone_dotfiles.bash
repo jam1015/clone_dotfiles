@@ -7,8 +7,8 @@ cd $HOME
 git clone --bare $REPO
 alias dots='/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'
 /usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME config --local status.showUntrackedFiles no
-touch $HOME/dotfiles.git/info/sparse-checkout
-echo -e "/*\nREADME.md" > $HOME/dotfiles.git/info/sparse-checkout
-/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME config --local core.sparsecheckout true
+#touch $HOME/dotfiles.git/info/sparse-checkout
+#echo -e "/*\nREADME.md" > $HOME/dotfiles.git/info/sparse-checkout
+#/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME config --local core.sparsecheckout true
 cd -
 #dots checkout
