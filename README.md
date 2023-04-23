@@ -23,6 +23,8 @@ Go to `Settings` and then `SSH and GPG keys`. Click `New SSH Key` and copy the c
 
 
 ## if I forgot to clone using ssh rather than http
+
+```
 git remote -v # to view the current remotes
 git remote set-url origin git@github.com:jam1015/dotfiles
 ```
